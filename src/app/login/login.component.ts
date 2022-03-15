@@ -9,11 +9,13 @@ export class LoginComponent implements OnInit {
 
   username = "";
   password = "";
-  eta = "";
+  eta = 0;
   msg = "Username, password o età errati";
   autenticatoMsg = true;
-  autenticatoVictoryImage = false;
+  //autenticatoVictoryImage = false;
   autenticatoCodeImage = true;
+  autenticatoBlikerMaggiorenne = false;
+  autenticatoBlikerMinorenne = false;
 
   constructor() { }
 
@@ -23,13 +25,19 @@ export class LoginComponent implements OnInit {
   // autenticazione = () => console.log("Username: " + this.username + "\n" + "Password: " + this.password)
   autenticazione = () => {
     this.autenticatoMsg = true;
-    if (this.username === "caue" && this.password === "caue" && this.eta === "123") {
+    if (this.username === "caue" && this.password === "caue") {
       this.autenticatoMsg = this.autenticatoMsg;
-      this.autenticatoVictoryImage = !this.autenticatoVictoryImage;
+      //this.autenticatoVictoryImage = !this.autenticatoVictoryImage;
       this.autenticatoCodeImage = !this.autenticatoCodeImage;
+      if(this.eta >= 18) {
+        this.autenticatoBlikerMaggiorenne = !this.autenticatoBlikerMaggiorenne;
+      }else {
+        this.autenticatoBlikerMinorenne = !this.autenticatoBlikerMinorenne;
+      }
+
     } else {
       this.autenticatoMsg = !this.autenticatoMsg;
-      this.autenticatoVictoryImage = this.autenticatoVictoryImage;
+      //this.autenticatoVictoryImage = this.autenticatoVictoryImage;
       this.autenticatoCodeImage = this.autenticatoCodeImage;
     }
   }

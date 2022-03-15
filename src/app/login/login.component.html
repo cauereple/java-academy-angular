@@ -1,8 +1,10 @@
     <div class="main-login">
         <div class="left-login">
             <h1 *ngIf="autenticatoCodeImage">Accedi<br>Entri nel nostro Team</h1>
+            <p *ngIf="autenticatoBlikerMaggiorenne" id="multicolortext" class="blinker">SEI MAGGIORENNE!!!</p>
+            <p *ngIf="autenticatoBlikerMinorenne" class="blinker">SEI MINORENNE!!!</p>
             <!-- <h1 *ngIf="autenticatoVictoryImage">CONGRATULATIONS</h1> -->
-            <img src="./assets/img/code.svg" class="left-login-image" alt="code animation">
+            <img *ngIf="autenticatoCodeImage" src="./assets/img/code.svg" class="left-login-image" alt="code animation">
             <!-- <div *ngIf="autenticatoVictoryImage"><img src="./assets/img/victory.svg" class="victory-login-image" alt="Victory"></div> -->
         </div>
         <div class="right-login">
@@ -24,7 +26,7 @@
                     <input type="text" id="età" placeholder="age" [(ngModel)]="eta">
                 </div>
                 <button class="btn-login" (click)=autenticazione()>Login</button>
-                <p *ngIf="!autenticatoMsg">{{msg}}</p>
+                <p *ngIf="!autenticatoMsg" class="msgErrati">{{msg}}</p>
             </div>
         </div>
         <!-- <div class="sobre">
