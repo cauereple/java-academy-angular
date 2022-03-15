@@ -1,1 +1,27 @@
-<p>Questo è il componente di login</p>
+<body>
+    <div class="main-login">
+        <div class="left-login">
+            <h1>Accedi<br>Entri nel nostro Team</h1>
+            <img src="./assets/img/code.svg" class="left-login-image" alt="code animation">
+        </div>
+        <div class="right-login">
+            <div class="card-login">
+                <h1>LOGIN</h1>
+                <div class="textfield">
+                    <label for="userid">userId</label>
+                    <input type="text" id="userId" placeholder="userId" [(ngModel)]="username">
+                    <!-- biding bidirezionale 
+                [(ngModel)] cria un link in tempo reale, se provare a cambiare l'usersname, cambiearà in tempo reale sulla pagina web
+                -->
+                </div>
+                <div class="textfield">
+                    <label for="password">Password</label>
+                    <input type="password" id="pass" placeholder="password" [(ngModel)]="password">
+                </div>
+                <button class="btn-login" (click)=autenticazione()>Login</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- <input type="text" id="userId" placeholder="userId" value="{{username}}"> binding unidirezionale -->
