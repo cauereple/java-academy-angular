@@ -120,7 +120,7 @@ p {
     color: #00ff88;
 }
 
-section.sobre {
+/* section.sobre {
     position: relative;
 }
 
@@ -132,7 +132,7 @@ section.sobre {
     height: 1200px;
     border-radius: 50%;
     background-color: #00ff88;
-}
+} */
 
 @media only screen and (max-width: 950px) {
     .card-login {
