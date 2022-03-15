@@ -9,8 +9,11 @@ export class LoginComponent implements OnInit {
 
   username = "";
   password = "";
-  msg = "Username o password errati";
-  autenticato = true;
+  //eta = "";
+  msg = "Username, password o età errati";
+  autenticatoMsg = true;
+  autenticatoVictoryImage = false;
+  autenticatoCodeImage = true;
 
   constructor() { }
 
@@ -19,11 +22,15 @@ export class LoginComponent implements OnInit {
 
   // autenticazione = () => console.log("Username: " + this.username + "\n" + "Password: " + this.password)
   autenticazione = () => {
-    this.autenticato = true;
+    this.autenticatoMsg = true;
     if (this.username === "caue" && this.password === "caue") {
-      this.autenticato = this.autenticato;
+      this.autenticatoMsg = this.autenticatoMsg;
+      this.autenticatoVictoryImage = !this.autenticatoVictoryImage;
+      this.autenticatoCodeImage = !this.autenticatoCodeImage;
     } else {
-      this.autenticato = !this.autenticato;
+      this.autenticatoMsg = !this.autenticatoMsg;
+      this.autenticatoVictoryImage = this.autenticatoVictoryImage;
+      this.autenticatoCodeImage = this.autenticatoCodeImage;
     }
   }
 }

@@ -1,8 +1,9 @@
-<body>
     <div class="main-login">
         <div class="left-login">
-            <h1>Accedi<br>Entri nel nostro Team</h1>
-            <img src="./assets/img/code.svg" class="left-login-image" alt="code animation">
+            <h1 *ngIf="autenticatoCodeImage">Accedi<br>Entri nel nostro Team</h1>
+            <h1 *ngIf="autenticatoVictoryImage">CONGRATULATIONS</h1>
+            <img *ngIf="autenticatoCodeImage" src="./assets/img/code.svg" class="left-login-image" alt="code animation">
+            <div *ngIf="autenticatoVictoryImage"><img src="./assets/img/victory.svg" class="victory-login-image" alt="Victory"></div>
         </div>
         <div class="right-login">
             <div class="card-login">
@@ -18,11 +19,18 @@
                     <label for="password">Password</label>
                     <input type="password" id="pass" placeholder="password" [(ngModel)]="password">
                 </div>
+                <!-- <div class="textfield">
+                    <label for="password">Age</label>
+                    <input type="text" id="età" placeholder="age" [(ngModel)]="eta">
+                </div> -->
                 <button class="btn-login" (click)=autenticazione()>Login</button>
-                <p *ngIf="!autenticato">{{msg}}</p>
+                <p *ngIf="!autenticatoMsg">{{msg}}</p>
             </div>
         </div>
+        <!-- <div class="sobre">
+            <div class="extras"></div>
+        </div>> -->
     </div>
-</body>
+
 
 <!-- <input type="text" id="userId" placeholder="userId" value="{{username}}"> binding unidirezionale -->
