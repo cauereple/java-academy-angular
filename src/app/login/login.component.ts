@@ -9,7 +9,7 @@ export class LoginComponent implements OnInit {
 
   username = "";
   password = "";
-  //eta = "";
+  eta = "";
   msg = "Username, password o età errati";
   autenticatoMsg = true;
   autenticatoVictoryImage = false;
@@ -23,7 +23,7 @@ export class LoginComponent implements OnInit {
   // autenticazione = () => console.log("Username: " + this.username + "\n" + "Password: " + this.password)
   autenticazione = () => {
     this.autenticatoMsg = true;
-    if (this.username === "caue" && this.password === "caue") {
+    if (this.username === "caue" && this.password === "caue" && this.eta === "123") {
       this.autenticatoMsg = this.autenticatoMsg;
       this.autenticatoVictoryImage = !this.autenticatoVictoryImage;
       this.autenticatoCodeImage = !this.autenticatoCodeImage;
