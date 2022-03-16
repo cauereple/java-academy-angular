@@ -1,19 +1,38 @@
 <div class="container">
-<!--<div class="successful-login" *ngIf="autenticatoVictoryImage">
+    <!--<div class="successful-login" *ngIf="autenticatoVictoryImage">
     <h1>CONGRATULATIONS</h1>
     <h2>Benvenuto nel nostro Team</h2>
     <div><img src="./assets/img/victory.svg" class="victory-login-image" alt="Victory"></div>
     </div> -->
-    <h1>Benvenuto {{nome}}!</h1>
+    <!-- TEXT -->
+    <section class="text-section">
+        <h1>congratulations {{name}} {{surname}}!</h1>
 
-    <h2>Abbiamo un regalo per te!</h2>
+        <h2>Scopri nella card cosa hai vinto!</h2>
+    </section>
+    <!-- END TEXT -->
 
-    <div class="flip" id="card">
-        <div class="face" id="front">
-            {{punti}}
-        </div>
-        <div class="face" id="back">
-            Scoprilo
-        </div>
+    <!-- CARDS -->
+    <div class="cards">
+        <ul>
+            <!-- <li>
+                <h1>3</h1>
+                <span>Nostro regalo per te</span>
+                <a href="#"><span>Clique aqui</span></a>
+            </li> -->
+            <!-- <li>
+                <h1>2</h1>
+                <span>Nostro regalo per te</span>
+                <a href="#"><span>Clique aqui</span></a>
+            </li> -->
+            <li>
+                <h1>Sei Maggiorenne</h1>
+                <span>Nostro regalo per te</span>
+                <a href="#">Click here</a>
+            </li>
+        </ul>
     </div>
+    <!-- END CARDS -->
+
 </div>
+

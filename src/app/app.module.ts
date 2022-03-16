@@ -8,6 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { ErrorComponent } from './error/error.component';
 import { CredenzialiErratiComponent } from './credenziali-errati/credenziali-errati.component';
+import { RegistrazioneComponent } from './registrazione/registrazione.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { CredenzialiErratiComponent } from './credenziali-errati/credenziali-err
     LoginComponent,
     WelcomeComponent,
     ErrorComponent,
-    CredenzialiErratiComponent
+    CredenzialiErratiComponent,
+    RegistrazioneComponent
   ],
   imports: [
     BrowserModule,

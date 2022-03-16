@@ -10,7 +10,6 @@ export class LoginComponent implements OnInit {
 
   username = "";
   password = "";
-  // eta = 0;
   // msg = "Username o password errati";
   autenticatoMsg = true;
   autenticatoCodeImage = true;
@@ -25,7 +24,8 @@ export class LoginComponent implements OnInit {
   // autenticazione = () => console.log("Username: " + this.username + "\n" + "Password: " + this.password)
   autenticazione = () => {
     if (this.username === "caue" && this.password === "caue") {
-      this.route.navigate(['welcome']);
+      //this.route.navigate(['welcome', this.username]);
+      this.route.navigate(['registrazione'])
       //this.autenticatoCodeImage = !this.autenticatoCodeImage;
       // if(this.eta >= 18) {
       //   this.autenticatoBlikerMaggiorenne = !this.autenticatoBlikerMaggiorenne;

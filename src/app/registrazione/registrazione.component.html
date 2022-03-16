@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="card-registrazione">
+        <h1>REGISTRAZIONE</h1>
+        <div class="textfield">
+            <label for="nome">Nome</label>
+            <input type="text" placeholder="nome" [(ngModel)]="nome">
+            <!-- biding bidirezionale 
+    [(ngModel)] banana in the box == cria un link in tempo reale, se provare a cambiare l'usersname, cambiearà in tempo reale sulla pagina web
+    -->
+        </div>
+        <div class="textfield">
+            <label for="cognome">Cognome</label>
+            <input type="text" placeholder="cognome" [(ngModel)]="cognome">
+        </div>
+        <div class="textfield">
+            <label for="age">Age</label>
+            <input type="text" placeholder="age" [(ngModel)]="eta">
+        </div>
+        <p *ngIf="autenticatoMsg" class="msgErrati">{{msg}}</p>
+        <button class="btn-registrazione" (click)="registra()">Registrati</button>
+        <!-- <p *ngIf="!autenticatoMsg" class="msgErrati">{{msg}}</p> -->
+    </div>
+</div>
