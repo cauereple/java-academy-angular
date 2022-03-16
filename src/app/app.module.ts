@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { ErrorComponent } from './error/error.component';
+import { CredenzialiErratiComponent } from './credenziali-errati/credenziali-errati.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     WelcomeComponent,
-    ErrorComponent
+    ErrorComponent,
+    CredenzialiErratiComponent
   ],
   imports: [
     BrowserModule,

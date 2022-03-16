@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -9,36 +10,31 @@ export class LoginComponent implements OnInit {
 
   username = "";
   password = "";
-  eta = 0;
-  msg = "Username, password o età errati";
+  // eta = 0;
+  // msg = "Username o password errati";
   autenticatoMsg = true;
-  //autenticatoVictoryImage = false;
   autenticatoCodeImage = true;
-  autenticatoBlikerMaggiorenne = false;
-  autenticatoBlikerMinorenne = false;
+  // autenticatoBlikerMaggiorenne = false;
+  // autenticatoBlikerMinorenne = false;
 
-  constructor() { }
+  constructor(private route: Router) { } // escrevemos essa variavel privada para fazer o code injection
 
   ngOnInit(): void {
   }
 
   // autenticazione = () => console.log("Username: " + this.username + "\n" + "Password: " + this.password)
   autenticazione = () => {
-    this.autenticatoMsg = true;
     if (this.username === "caue" && this.password === "caue") {
-      this.autenticatoMsg = this.autenticatoMsg;
-      //this.autenticatoVictoryImage = !this.autenticatoVictoryImage;
-      this.autenticatoCodeImage = !this.autenticatoCodeImage;
-      if(this.eta >= 18) {
-        this.autenticatoBlikerMaggiorenne = !this.autenticatoBlikerMaggiorenne;
-      }else {
-        this.autenticatoBlikerMinorenne = !this.autenticatoBlikerMinorenne;
-      }
+      this.route.navigate(['welcome']);
+      //this.autenticatoCodeImage = !this.autenticatoCodeImage;
+      // if(this.eta >= 18) {
+      //   this.autenticatoBlikerMaggiorenne = !this.autenticatoBlikerMaggiorenne;
+      // }else {
+      //   this.autenticatoBlikerMinorenne = !this.autenticatoBlikerMinorenne;
+      // }
 
     } else {
-      this.autenticatoMsg = !this.autenticatoMsg;
-      //this.autenticatoVictoryImage = this.autenticatoVictoryImage;
-      this.autenticatoCodeImage = this.autenticatoCodeImage;
+      this.route.navigate(['credenziali-errati']);
     }
   }
 }

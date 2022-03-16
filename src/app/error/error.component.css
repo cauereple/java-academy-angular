@@ -3,7 +3,7 @@
 .container {
     width: 100vw;
     height: 100vh;
-    background-color: #5f527c;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,13 +12,6 @@
 }
 
 .error-image {
-    width: 35%;
-}
-
-p {
-    font-family: 'Noto Sans', sans-serif;
-    color: #00ff88;
-    text-transform: uppercase;
-    font-weight: bold;
+    width: 50%;
 }
 
