@@ -53,10 +53,8 @@ ul {
   margin-left: -125px;
   margin-top: -130px;
   background-color: #201b2c;
-  width: 100%;
-  
-
 }
+
 h1, span, a {
     z-index: 99;
     position: relative;
