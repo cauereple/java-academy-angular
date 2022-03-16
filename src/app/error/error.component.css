@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #5f527c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.error-image {
+    width: 35%;
+}
+
+p {
+    font-family: 'Noto Sans', sans-serif;
+    color: #00ff88;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
