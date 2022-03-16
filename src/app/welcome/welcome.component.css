@@ -28,19 +28,18 @@ section h1 {
   animation: animate 10s linear infinite;
 }
 
-@keyframes animate {
-  0%{
-    background-position: 0%;;
-  }
-  100%{
-    background-position: 400%;;
-  }
-}
-
 section h2 {
   color: #00ff88;
   font-size: 5vh;
 }
+
+.winning-image {
+  width: 35vw;
+}
+
+/* .victory-image {
+  width: 35vw;
+} */
 
 ul {
   list-style:none;
@@ -177,4 +176,13 @@ ul:hover li:hover * {
   color: #fff;
     background: -webkit-linear-gradient(#fff, #fff);-webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+@keyframes animate {
+  0%{
+    background-position: 0%;;
+  }
+  100%{
+    background-position: 400%;;
+  }
 }
