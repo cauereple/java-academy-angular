@@ -10,6 +10,7 @@ import { ErrorComponent } from './error/error.component';
 import { CredenzialiErratiComponent } from './credenziali-errati/credenziali-errati.component';
 import { RegistrazioneComponent } from './registrazione/registrazione.component';
 import { ArticoliComponent } from './articoli/articoli.component';
+import { ProdottiComponent } from './prodotti/prodotti.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ArticoliComponent } from './articoli/articoli.component';
     ErrorComponent,
     CredenzialiErratiComponent,
     RegistrazioneComponent,
-    ArticoliComponent
+    ArticoliComponent,
+    ProdottiComponent
   ],
   imports: [
     BrowserModule,

@@ -31,15 +31,26 @@ section h1 {
 section h2 {
   color: #00ff88;
   font-size: 5vh;
+  z-index: 1;
 }
 
 .winning-image {
   width: 35vw;
 }
 
-/* .victory-image {
+.victory-image {
   width: 35vw;
-} */
+}
+
+.extras {
+    position: absolute;
+    bottom: -450px;
+    right: -500px;
+    width: 1200px;
+    height: 1200px;
+    border-radius: 50%;
+    background: #514869;
+}
 
 ul {
   list-style:none;

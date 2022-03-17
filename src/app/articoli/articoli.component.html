@@ -1,7 +1,7 @@
 <h1>Articoli Disponibili</h1>
 
 <table id="articoli" border="1">
-    <caption>Alimentari</caption> <!-- Titolo tabella -->
+    <caption>Alimentari</caption> <!-- Titolo Tabella -->
     <thead>
         <tr>
             <th>CodArt</th>
@@ -15,11 +15,10 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngfor="let articolo of articoli"> <!-- istruzione Angular che è praticamente un for each. Questa è la parte non fissa della tabella (dinamica).
-        ngfor per ogni elemento in questo Array lui assegna ogni elemento, ogni ciclo a questa variabile articolo -->
+        <tr *ngFor="let articolo of articoli">
             <td>{{articolo.codart}}</td>
             <td>{{articolo.descrizione}}</td>
-            <td>{{articolo.um</td>
+            <td>{{articolo.um}}</td>
             <td>{{articolo.pzcart}}</td>
             <td>{{articolo.peso}}</td>
             <td>{{articolo.prezzo | currency : 'EUR'}}</td> <!-- con il pipe si modifica la formattazione di una valuta -->

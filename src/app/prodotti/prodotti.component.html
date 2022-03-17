@@ -1,0 +1,53 @@
+<h1>Prodotti Eletrici</h1>
+
+<table id="prodotti" border="1">
+    <caption>monopattini Elettriche</caption> <!-- Titolo Tabella -->
+    <thead>
+        <tr>
+            <th>CodArt</th>
+            <th>Descrizione</th>
+            <th>Raggio Ruote</th>
+            <th>Colore</th>
+            <th>Batteria</th>
+            <th>Costo O/N</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let monopattini of electricBike">
+            <td>{{monopattini.codart}}</td>
+            <td>{{monopattini.descrizione}}</td>
+            <td>{{monopattini.raggioR}}</td>
+            <td>{{monopattini.colore}}</td>
+            <td>{{monopattini.batteria}}</td>
+            <td>{{monopattini.costo_no}}</td>
+        </tr>
+    </tbody>
+</table>
+
+<table id="prodotti" border="1">
+    <caption>Monopattini Elettrici</caption> <!-- Titolo Tabella -->
+    <thead>
+        <tr>
+            <th>CodArt</th>
+            <th>Descrizione</th>
+            <th>Marca</th>
+            <th>Colore</th>
+            <th>Batteria</th>
+            <th>Velocità Massima</th>
+            <th>Costo O/N</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let monopattini of electricRoller">
+            <td>{{monopattini.codart}}</td>
+            <td>{{monopattini.descrizione}}</td>
+            <td>{{monopattini.marca}}</td>
+            <td>{{monopattini.colore}}</td>
+            <td>{{monopattini.batteria}}</td>
+            <td>{{monopattini.vMax}}</td>
+            <td>{{monopattini.costo_no}}</td>
+        </tr>
+    </tbody>
+</table>
+
+<p *ngIf="autenticatoLink">Clicca <a routerLink="/articoli">qui</a> per guardare altri prodotti</p>
