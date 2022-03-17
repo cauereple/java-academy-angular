@@ -56,8 +56,8 @@ ul {
 }
 
 h1, span, a {
-    z-index: 99;
-    position: relative;
+  z-index: 99;
+  position: relative;
 }
 ul li {
   display: block;
@@ -137,23 +137,23 @@ ul li a:hover {
   transform:scale(1.2) !important;
 }
 ul li:nth-child(1) {
-   transform:  rotate(20deg) skew(-20deg) translate(10px,10px); 
+  transform:  rotate(20deg) skew(-20deg) translate(10px,10px); 
 }
 ul li:nth-child(2) {
-   transform:  rotate(20deg) skew(-20deg) translate(0px,0px); 
+  transform:  rotate(20deg) skew(-20deg) translate(0px,0px); 
 }
 ul li:nth-child(3) {
-   transform:  rotate(20deg) skew(-20deg) translate(-10px,-10px); 
+  transform:  rotate(20deg) skew(-20deg) translate(-10px,-10px); 
 }
 
 ul:hover li:nth-child(1) {
-   transform:  rotate(0deg) skew(0); 
+  transform:  rotate(0deg) skew(0); 
 }
 ul:hover li:nth-child(2) {
-   transform:  rotate(0) skew(0); 
+  transform:  rotate(0) skew(0); 
 }
 ul:hover li:nth-child(3) {
-   transform:  rotate(-40deg) skew(0) translate(-100px,0) ; 
+  transform:  rotate(-40deg) skew(0) translate(-100px,0) ; 
 }
 ul:hover li:hover {
   z-index: 9;
@@ -172,15 +172,15 @@ ul:hover li:hover:after {
 }
 ul:hover li:hover * {
   color: #fff;
-    background: -webkit-linear-gradient(#fff, #fff);-webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(#fff, #fff);-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @keyframes animate {
   0%{
-    background-position: 0%;;
+  background-position: 0%;;
   }
   100%{
-    background-position: 400%;;
+  background-position: 400%;;
   }
 }

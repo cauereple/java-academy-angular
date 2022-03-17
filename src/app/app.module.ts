@@ -9,6 +9,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { ErrorComponent } from './error/error.component';
 import { CredenzialiErratiComponent } from './credenziali-errati/credenziali-errati.component';
 import { RegistrazioneComponent } from './registrazione/registrazione.component';
+import { ArticoliComponent } from './articoli/articoli.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { RegistrazioneComponent } from './registrazione/registrazione.component'
     WelcomeComponent,
     ErrorComponent,
     CredenzialiErratiComponent,
-    RegistrazioneComponent
+    RegistrazioneComponent,
+    ArticoliComponent
   ],
   imports: [
     BrowserModule,
