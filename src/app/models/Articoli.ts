@@ -1,4 +1,4 @@
-export interface IArticoli { // Interfaccia di Articoli in TScript
+export interface IArticoli { // Interfaccia di Articoli in TypeScript
     codart: string
     descrizione: string
     um: string
