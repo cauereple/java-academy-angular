@@ -11,6 +11,7 @@ import { CredenzialiErratiComponent } from './credenziali-errati/credenziali-err
 import { RegistrazioneComponent } from './registrazione/registrazione.component';
 import { ArticoliComponent } from './articoli/articoli.component';
 import { ProdottiComponent } from './prodotti/prodotti.component';
+import { ClientiComponent } from './clienti/clienti.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ProdottiComponent } from './prodotti/prodotti.component';
     CredenzialiErratiComponent,
     RegistrazioneComponent,
     ArticoliComponent,
-    ProdottiComponent
+    ProdottiComponent,
+    ClientiComponent
   ],
   imports: [
     BrowserModule,
