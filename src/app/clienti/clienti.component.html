@@ -1,6 +1,6 @@
 <h1>Clienti</h1>
 
-<table id="articoli" border="1">
+<table id="clienti" border="1">
     <caption>Clienti</caption> <!-- Titolo Tabella -->
     <thead>
         <tr>
@@ -26,3 +26,42 @@
         </tr>
     </tbody>
 </table>
+
+<table id="clienti" border="1">
+    <caption>Clienti 2</caption> <!-- Titolo Tabella -->
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Cognome</th>
+            <th>cod. Cliente</th>
+            <th>Età</th>
+            <th>Data di Nascita</th>
+            <th>Durata Noleggio</th>
+            <th>Data Noleggio</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let clienti of tabellaClienti2">
+            <td>{{clienti.nome}}</td>
+            <td>{{clienti.cognome}}</td>
+            <td>{{clienti.codCliente}}</td>
+            <td>{{clienti.eta}}</td>
+            <td>{{clienti.dataNascita | date : 'dd-MM-YYYY'}}</td>
+            <td>{{clienti.durataNoleggio}}</td>
+            <td>{{clienti.dataNoleggio | date : 'dd-MM-YYYY'}}
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<br><br>
+<p>Hai già fatto qualche noleggio con noi?</p>
+<input (click)="verificaButton(true)" type="radio" name="btn">
+<label>Si</label>
+<input (click)="verificaButton(false)" type="radio" name="btn">
+<label>No</label>
+
+<br>
+<button *ngIf="verificaPulsanteSi" (click)=welcomeButton() id="btn-welcome">Welcome</button>
+<br>
+<button *ngIf="verificaPulsanteNo" id="btn-grazie">Grazie</button>

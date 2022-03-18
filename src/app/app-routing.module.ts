@@ -15,6 +15,7 @@ const routes: Routes = [
   { path:'login' , component :LoginComponent}, //identifica la landing page
   { path: 'registrazione' , component :RegistrazioneComponent},
   { path:'welcome/:nome/:cognome' , component :WelcomeComponent},
+  { path:'welcome' , component :WelcomeComponent},
   { path: 'articoli' , component :ArticoliComponent},
   { path: 'prodotti' , component :ProdottiComponent},
   { path: 'clienti' , component :ClientiComponent},
